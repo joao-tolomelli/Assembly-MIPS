@@ -13,10 +13,10 @@
 #Inserindo dados
 	li	$v0, 5
 	syscall
-	move	$a0, $v0	#primeiro número lido armazenado em $s0
+	move	$a0, $v0	#primeiro número lido armazenado em $a0
 	li	$v0, 5
 	syscall
-	move	$a1, $v0	#primeiro número lido armazenado em $s0
+	move	$a1, $v0	#segundo número lido armazenado em $a1
 	
 #Saltando para a "função" esto_div
 	jal	resto_div	#armazena o endereço dessa linha em $ra
